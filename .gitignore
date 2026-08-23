@@ -1,0 +1,18 @@
+# Arquivos compilados
+*.o
+*.obj
+*.out
+*.exe
+
+# Diretórios de compilação
+build/
+bin/
+
+# Arquivos de IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Arquivos temporários
+*.tmp
+*.log
