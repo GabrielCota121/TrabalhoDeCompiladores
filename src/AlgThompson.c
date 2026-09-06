@@ -11,7 +11,7 @@ PS: O meu vscode tem uma IA que faz comentários e escritas de código automatic
 typedef struct Estado {
     int id;
     int caracter; // Pensei na representação dos números da tabela ASCII, mas isso pode virar um char também, não sei a melhor opção
-    struct Estado *transicao1; 
+    struct Estado *transicao1;  
     struct Estado *transicao2; 
 }Estado;
 
@@ -38,8 +38,8 @@ Estado* criarEstado(int caracter) {
 }
 // Quando você cria um novo estado sempre terá um epsilon para a transição para o próximo estado.
 Fragmento criarFragmento(char caracter){
-    Estado *inicio= criarEstado(caracter);
-    Estado *fim = criarEstado(EPSILON); 
+    Estado *inicio = criarEstado(caracter); 
+    Estado *fim = criarEstado(EPSILON);     
     inicio->transicao1 = fim; 
     Fragmento f={inicio, fim};
     return f;
@@ -62,17 +62,9 @@ Fragmento uniao(Fragmento a, Fragmento b) {
     Estado *novoFim = criarEstado(EPSILON); // Novo estado final com transição epsilon
     novoInicio->transicao1 = a.inicio; // Conecta ao início do primeiro fragmento
     novoInicio->transicao2 = b.inicio; // Conecta ao início do segundo fragmento
-    if (a.fim->transicao1 == NULL){
-        a.fim->transicao1 = novoFim;
-    } else{
-        a.fim->transicao2 = novoFim;
-    }
     
-    if (b.fim->transicao1 == NULL){
-        b.fim->transicao1 = novoFim;
-    }else {
-        b.fim->transicao2 = novoFim;
-    }
+    a.fim->transicao1 = novoFim; 
+    b.fim->transicao1 = novoFim;
     Fragmento f = {novoInicio, novoFim}; // O novo fragmento começa no novo estado inicial e termina no novo estado final
     return f;
 }
@@ -80,16 +72,16 @@ Fragmento uniao(Fragmento a, Fragmento b) {
 // Regra 3: Fechamento de Kleene: Cria um novo estado inicial e final, permitindo repetições do fragmento.
 
 Fragmento fechamentoKleene(Fragmento a) {
-    Estado *novoInicio = criarEstado(EPSILON); // Novo estado inicial com transição epsilon
-    Estado *novoFim = criarEstado(EPSILON); // Novo estado final com transição epsilon
-    novoInicio->transicao1 = a.inicio; // Conecta ao início do fragmento
-    novoInicio->transicao2 = novoFim; // Conecta diretamente ao novo estado final (para permitir a repetição zero vezes)
-    if(a.fim->transicao1 == NULL){
-        a.fim->transicao1 = a.inicio; // Conecta o final do fragmento de volta ao início (para permitir repetições)
-        a.fim->transicao2 = novoFim; // Conecta o final do fragmento ao novo estado final
-    } else {
-        a.fim->transicao2 = a.inicio; 
-    }
-    Fragmento f = {novoInicio, novoFim}; // O novo fragmento começa no novo estado inicial e termina no novo estado final
+    Estado *novoInicio = criarEstado(EPSILON);
+    Estado *novoFim = criarEstado(EPSILON);
+
+    novoInicio->transicao1 = a.inicio;   // opção 1: entra no fragmento
+    novoInicio->transicao2 = novoFim;    // opção 2: pula direto (zero repetições)
+
+    a.fim->transicao1 = a.inicio;        // ao terminar, pode voltar pro início...
+    a.fim->transicao2 = novoFim;         // ...ou sair de vez
+
+    Fragmento f = {novoInicio, novoFim};
     return f;
 }
+
