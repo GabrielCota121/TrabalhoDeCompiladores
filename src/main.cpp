@@ -4,7 +4,7 @@
 #include<ctype.h>
 #include "AnalisadorLexico.h"
 #include "Token.h"
-#include "AlgThompson.c"
+#include "AlgThompson.cpp"
 
 // Apenas como comentários
 int main(){
