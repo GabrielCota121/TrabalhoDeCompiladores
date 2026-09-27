@@ -1,9 +1,9 @@
-PWD /home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao
+PWD /home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao/relatorio.tex
+INPUT /home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1/relatorio.tex
 OUTPUT relatorio.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
