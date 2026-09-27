@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex relatorio"] 1790538423.83075 "relatorio.aux" "relatorio.bbl" "relatorio" 1790538426.65759 0
+["bibtex relatorio"] 1790538423.83075 "relatorio.aux" "relatorio.bbl" "relatorio" 1790539464.31253 0
   "./sbc-template.bib" 1790433374.14038 890 e88c4ebdbb52e32359bcbcf9f76bfbee ""
   "./sbc.bst" 1790433204.14288 21863 e2f961827e28074ef5a2bc27ccb7b310 ""
-  "relatorio.aux" 1790538426.30114 8394 df61c0c63fbe78f9eb168259bd7d28c4 "pdflatex"
+  "relatorio.aux" 1790539463.96085 8394 df61c0c63fbe78f9eb168259bd7d28c4 "pdflatex"
   (generated)
   "relatorio.bbl"
   "relatorio.blg"
   (rewritten before read)
-["pdflatex"] 1790538423.97856 "/home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1/relatorio.tex" "relatorio.pdf" "relatorio" 1790538426.65775 0
+["pdflatex"] 1790539461.75802 "/home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1/relatorio.tex" "relatorio.pdf" "relatorio" 1790539464.3127 0
   "/etc/texmf/web2c/texmf.cnf" 1784745171.32998 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1/relatorio.tex" 1790538420.93788 33511 c65f30f08729c8eb69cda9125c535601 ""
+  "/home/lucascalonso/comp-uff/TrabalhoDeCompiladores/apresentacao1/relatorio.tex" 1790539461.54864 33511 c65f30f08729c8eb69cda9125c535601 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -201,9 +201,9 @@
   "SolucaoFlexValido2.png" 1790432420.15271 49481 9b7838bc450ba6e7f516e73d61d9f5ac ""
   "SolucaoFlexValido3.png" 1790432421.81802 40181 570564f8db19c70358b83cab3eee2425 ""
   "SolucaoFlexValido4.png" 1790432423.1164 54188 60b607c95c7c5c4472dc400f8a984d4f ""
-  "relatorio.aux" 1790538426.30114 8394 df61c0c63fbe78f9eb168259bd7d28c4 "pdflatex"
+  "relatorio.aux" 1790539463.96085 8394 df61c0c63fbe78f9eb168259bd7d28c4 "pdflatex"
   "relatorio.bbl" 1790538423.97213 185 040acea9528519627ed6620da6f76116 "bibtex relatorio"
-  "relatorio.tex" 1790538420.93788 33511 c65f30f08729c8eb69cda9125c535601 ""
+  "relatorio.tex" 1790539461.54864 33511 c65f30f08729c8eb69cda9125c535601 ""
   "sbc-template.sty" 1790432332.41734 5280 0a277450ee6cfc82a68e4b0b0f92e15e ""
   "valido1.png" 1790432430.11476 12826 3f92e695d1973c73af257b00a56d0f21 ""
   "valido1Scanner.png" 1790432431.5182 71048 decf7429f152f71ec59bea801cb450e7 ""
